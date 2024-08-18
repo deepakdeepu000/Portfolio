@@ -41,10 +41,10 @@ const SideBar = () => {
         >
             <div className="sidebar-info">
                 <figure className="avatar-box">
-                    <img src="./assets/images/photo.jpg" alt="Om Kharche" width="80" />
+                    <img src="./assets/images/photo.jpg" alt="P Deepak Babu" width="80" />
                 </figure>
                 <div className="info-content">
-                    <h1 className="name" title="Om Kharche">Om Kharche</h1>
+                    <h1 className="name" title="P Deepak Babu">P Deepak Babu<h1>
                     <p className="title">Full Stack Developer</p>
                 </div>
                 <button className="info_more-btn"  onClick={handleContactToggle}>
