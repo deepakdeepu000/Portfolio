@@ -41,10 +41,10 @@ const SideBar = () => {
         >
             <div className="sidebar-info">
                 <figure className="avatar-box">
-                    <img src="./assets/images/photo.png" alt="Om Kharche" width="80" />
+                    <img src="./assets/images/photo.jpg" alt="P Deepak Babu" width="80" />
                 </figure>
                 <div className="info-content">
-                    <h1 className="name" title="Om Kharche">Om Kharche</h1>
+                    <h1 className="name" title="P Deepak Babu">P Deepak Babu</h1>
                     <p className="title">Full Stack Developer</p>
                 </div>
                 <button className="info_more-btn"  onClick={handleContactToggle}>
@@ -97,60 +97,3 @@ const SideBar = () => {
 };
 
 export default SideBar;
-
-
-
-{/* <li className="contact-item">
-                            <div className="icon-box">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </div>
-                            <div className="contact-info">
-                                <p className="contact-title">Email</p>
-                                <a href="mailto:deepakpampana2003@gmail.com" className="contact-link">deepakpampana2003@gmail.com</a>
-                            </div>
-                        </li>
-                        <li className="contact-item">
-                            <div className="icon-box">
-                                <ion-icon name="phone-portrait-outline"></ion-icon>
-                            </div>
-                            <div className="contact-info">
-                                <p className="contact-title">Phone</p>
-                                <a href="tel:+919581460116" className="contact-link">+91 9581460116</a>
-                            </div>
-                        </li>
-                        <li className="contact-item">
-                            <div className="icon-box">
-                                <ion-icon name="calendar-outline"></ion-icon>
-                            </div>
-                            <div className="contact-info">
-                                <p className="contact-title">Birthday</p>
-                                <time dateTime="2004-08-05">5 August, 2004</time>
-                            </div>
-                        </li>
-                        <li className="contact-item">
-                            <div className="icon-box">
-                                <ion-icon name="location-outline"></ion-icon>
-                            </div>
-                            <div className="contact-info">
-                                <p className="contact-title">Location</p>
-                                <address>Rajahmundry, India</address>
-                            </div>
-                        </li>
-                    </ul>
-                    <div className="separator"></div>
-                    <ul className="social-list">
-                        <li className="social-item">
-                            <a href="#" className="social-link">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a>
-                        </li>
-                        <li className="social-item">
-                            <a href="#" className="social-link">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a>
-                        </li>
-                        <li className="social-item">
-                            <a href="#" className="social-link">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </li> */}

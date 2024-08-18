@@ -20,7 +20,7 @@ const ContactComponent = () => {
         console.log(formData); 
 
         try {
-            const response = await axios.post('https://7t5hluvwr8.execute-api.us-east-1.amazonaws.com/default/Email-sender', formData);
+            const response = await axios.post('https://wabajpdxhe.execute-api.us-east-1.amazonaws.com/message-receiver/api/getMessage', formData);
             if (response.status === 200) {
                 alert('Message sent successfully!');
                 setFormData({ username: '', email: '', message: '' });
@@ -37,10 +37,10 @@ const ContactComponent = () => {
                     <h2 className="h2 article-title">Contact</h2>
                 </header>
 
-                <section className="mapbox" data-mapbox>
+{/*                 <section className="mapbox" data-mapbox>
                     <figure>
                     </figure>
-                </section>
+                </section> */}
 
                 <section className="contact-form">
                     <h3 className="h3 form-title">Contact Form</h3>
