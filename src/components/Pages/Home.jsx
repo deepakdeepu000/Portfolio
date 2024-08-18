@@ -29,7 +29,7 @@ const Certificates = [
   { 
     label: "Microsoft Certified: Azure Fundamentals",
     date: "2021-06-14",
-    image: "./assets/images/certificate-3.png",
+    image: "./assets/images/certificate-5.png",
     content: "The Microsoft Certified: Azure Fundamentals certification validates foundational knowledge of cloud services and how those services are provided with Microsoft Azure. It is ideal for individuals seeking to understand basic cloud concepts and Azure."
   },
   { 
