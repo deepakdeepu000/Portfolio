@@ -21,30 +21,31 @@ const SkillList = [
 
 const Certificates = [
   { 
-    label: "AWS ",
+    label: "AWS Certified Cloud Pactitinoer",
     date: "2021-06-14",
     image: "./assets/images/certificate-1.png",
-    content: "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+    content: "AWS Certified Solutions Architect credential demonstrates expertise in designing distributed systems and applications on AWS. It verifies proficiency in deploying, managing, and operating scalable systems on the AWS cloud platform."
   },
   { 
-    label: "Microsofts",
+    label: "Microsoft Certified: Azure Fundamentals",
+    date: "2021-06-14",
+    image: "./assets/images/certificate-3.png",
+    content: "The Microsoft Certified: Azure Fundamentals certification validates foundational knowledge of cloud services and how those services are provided with Microsoft Azure. It is ideal for individuals seeking to understand basic cloud concepts and Azure."
+  },
+  { 
+    label: "IT Python Specilist",
     date: "2021-06-14",
     image: "./assets/images/certificate-2.png",
-    content: "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+    content: "The Python for Data Science certification demonstrates proficiency in Python programming and its applications in data science. It covers key areas such as data manipulation, visualization, and analysis using Python libraries."
   },
   { 
-    label: "IT Python",
-    date: "2021-06-14",
-    image: "./assets/images/certificate-3.jpeg",
-    content: "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
-  },
-  { 
-    label: "Certified C",
+    label: "CCNA (Cisco Certified Network Associate)",
     date: "2021-06-14",
     image: "./assets/images/certificate-4.png",
-    content: "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+    content: "The CCNA certification validates skills in networking fundamentals, IP connectivity, IP services, security fundamentals, and automation. It demonstrates the ability to install, configure, and troubleshoot networks."
   }
 ];
+
 
 const HomeComponent = () => {
 
