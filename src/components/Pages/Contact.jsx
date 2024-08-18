@@ -37,10 +37,10 @@ const ContactComponent = () => {
                     <h2 className="h2 article-title">Contact</h2>
                 </header>
 
-                <section className="mapbox" data-mapbox>
+{/*                 <section className="mapbox" data-mapbox>
                     <figure>
                     </figure>
-                </section>
+                </section> */}
 
                 <section className="contact-form">
                     <h3 className="h3 form-title">Contact Form</h3>
