@@ -72,22 +72,15 @@ const HomeComponent = () => {
 
       <section class="about-text">
         <p>
-          I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-          I enjoy
-          turning complex problems into simple, beautiful and intuitive designs.
+          I am an AWS Cloud Engineer and Full-Stack Engineer with extensive experience in developing and deploying scalable solutions. 
+          My expertise spans across both backend and frontend technologies, leveraging AWS services to build robust, cloud-native applications. 
         </p>
 
         <p>
-          My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-          Moreover, I
-          add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-          across your
-          message and identity in the most creative way. I created web design for many famous brand companies.
+          With a passion for turning complex problems into elegant, user-friendly solutions, 
+          I thrive on creating intuitive designs and efficient systems that drive business success.
         </p>
       </section>
-
-
-    
 
       <section class="service">
 
@@ -105,7 +98,7 @@ const HomeComponent = () => {
               <h4 class="h4 service-item-title">Web design</h4>
 
               <p class="service-item-text">
-                The most modern and high-quality design made at a professional level.
+                The most modern and high-quality design.
               </p>
             </div>
 
@@ -121,13 +114,44 @@ const HomeComponent = () => {
               <h4 class="h4 service-item-title">Web development</h4>
 
               <p class="service-item-text">
-                High-quality development of sites at the professional level.
+                High-quality development of sites.
               </p>
             </div>
 
           </li>
 
-        </ul>
+          <li class="service-item">
+
+                    <div class="service-icon-box">
+                      <img src="./assets/images/icon-aws.svg" alt="AWS icon" width="40"></img>
+                    </div>
+                  
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title">AWS Cloud Solutions</h4>
+                  
+                      <p class="service-item-text">
+                        Expertise in designing and deploying scalable cloud solutions using AWS services.
+                      </p>
+                    </div>
+                  
+                  </li>
+                  
+                  <li class="service-item">
+                  
+                    <div class="service-icon-box">
+                      <img src="./assets/images/icon-devops.svg" alt="DevOps icon" width="40"></img>
+                    </div>
+                  
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title">DevOps Engineering</h4>
+                  
+                      <p class="service-item-text">
+                        Streamlining development and operations through automation and continuous integration.
+                      </p>
+                    </div>
+                  
+                  </li>
+         </ul>
 
       </section>
 
