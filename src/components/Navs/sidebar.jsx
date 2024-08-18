@@ -41,7 +41,7 @@ const SideBar = () => {
         >
             <div className="sidebar-info">
                 <figure className="avatar-box">
-                    <img src="./assets/images/photo.jpg" alt="Om Kharche" width="80" />
+                    <img src="./assets/images/photo.png" alt="Om Kharche" width="80" />
                 </figure>
                 <div className="info-content">
                     <h1 className="name" title="Om Kharche">Om Kharche</h1>
