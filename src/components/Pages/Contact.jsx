@@ -25,10 +25,18 @@ const ContactComponent = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => console.log("Form successfully submitted"))
+      .then(() => {return alert("Message sent successfully!")})
       .catch((error) => alert(error));
 
+    // Reset form fields after submission
+    setFormData({
+      username: "",
+      email: "",
+      message: "",
+    });
+
     document.querySelector("form").addEventListener("submit", handleSubmit);
+
   };
 
   return (
