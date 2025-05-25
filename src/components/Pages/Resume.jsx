@@ -34,11 +34,11 @@ const experience = [
 ];
 
 const skills = [
-  { name: "Wed Development" , level: "80%" },
-  { name: "React & Nodejs", level: "70%"},
+  { name: "Wed Development" , level: "70%" },
+  { name: "React & Nodejs", level: "60%"},
   { name: "AWS & Cloud Computing", level: "85%" },
-  { name: "Database Management (SQL & NoSQL)", level: "70%" },
-  { name: "DevOps Tools (Docker, Jenkins, Ansible)", level: "75%" },
+  { name: "Database Management (SQL & NoSQL)", level: "60%" },
+  { name: "DevOps Tools (Docker, Jenkins, Ansible)", level: "60%" },
 ];
 
 const ResumeComponent = () => {

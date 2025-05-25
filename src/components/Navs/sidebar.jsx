@@ -41,11 +41,11 @@ const SideBar = () => {
         >
             <div className="sidebar-info">
                 <figure className="avatar-box">
-                    <img src="./assets/images/Photo.png" alt="P Deepak Babu" width="80" />
+                    <img src="./assets/images/Photo.jpeg" alt="P Deepak Babu" width="80" />
                 </figure>
                 <div className="info-content">
                     <h1 className="name" title="P Deepak Babu">P Deepak Babu</h1>
-                    <p className="title">Full Stack Developer</p>
+                    <p className="title">Developer</p>
                 </div>
                 <button className="info_more-btn"  onClick={handleContactToggle}>
                     <span>{isContactVisible ? 'Hide Contacts' : 'Show Contacts'}</span>
@@ -92,6 +92,7 @@ const SideBar = () => {
 
                 
             )}
+            
         </aside>
     );
 };

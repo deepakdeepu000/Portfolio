@@ -12,14 +12,12 @@ const ProjectComponent = () => {
   ];
 
   const projects = [
-    { title: "Quiz App", category: "Web Development", image: "./assets/images/projects/quizapp.png" },
-    { title: "Object Detection", category: "Applications & Machine Learning", image: "./assets/images/projects/objectdetection.png" },
-    { title: "Customer Churn Analysis", category: "Machine Learning", image: "./assets/images/projects/customerchurn.jpg" },
-    { title: "Facial Recognition", category: "Applications", image: "./assets/images/projects/facereko.png"},
-    { title: "To-do-List", category: "Web Design", image: "./assets/images/projects/todolist.png" },
-    { title: "Summary", category: "Web Development", image: "./assets/images/project-7.png" },
-    { title: "Task Manager", category: "Applications", image: "./assets/images/project-8.jpg" },
-    { title: "Arrival", category: "Web Development", image: "./assets/images/project-9.png" },
+    { title: "Quiz App", category: "Web Development", image: "./assets/images/projects/quizapp.png" , Link: "https://github.com/deepakdeepu000/Quizen-AI_Quiz_App"},
+    { title: "Fake Currency Detection", category: "Applications & Machine Learning", image: "./assets/images/projects/objectdetection.png", Link: "" },
+    { title: "Customer Churn Analysis", category: "Machine Learning", image: "./assets/images/projects/customerchurn.jpg", Link: "https://github.com/deepakdeepu000/Customer-Churn_detection" },
+    { title: "Object Recognition", category: "Applications", image: "./assets/images/projects/facereko.png",  Link: "https://github.com/deepakdeepu000/Object-Detection"},
+    { title: "To-do-List", category: "Web Design", image: "./assets/images/projects/todolist.png", Link: "https://github.com/deepakdeepu000/to-do-list"},
+    { title: "ChatBot", category: "Web Development & Machine Learning", image: "./assets/images/projects/chatbot.png", Link: "https://github.com/deepakdeepu000/Webpage-ChatBot"}
   ];
 
   // Function to determine if the project matches the active category
@@ -79,7 +77,7 @@ const ProjectComponent = () => {
                 data-filter-item
                 data-category={project.category.toLowerCase()}
               >
-                <a href="#">
+                <a href={project.Link} target="_blank" rel="noopener noreferrer">
                   <figure className="project-img">
                     <div className="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>

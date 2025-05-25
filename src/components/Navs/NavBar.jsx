@@ -42,13 +42,11 @@ const Navbar = ({activeComponent , onNavClick}) => {
                 ))}
             </ul>
 
-            
-            <button className={`navbar-toggle ${isButtonToggled ? 'active' : ''}`}
+           <button className={`navbar-toggle ${isButtonToggled ? 'active' : ''} `}
               onClick={()=>setButtonToggled(!isButtonToggled)}
             >
                 <FontAwesomeIcon icon={ faBars } /> 
             </button>
-            
         </nav>
     );
 };
