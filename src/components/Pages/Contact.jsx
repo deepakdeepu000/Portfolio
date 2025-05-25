@@ -25,7 +25,9 @@ const ContactComponent = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => {return alert("Message sent successfully!")})
+      .then(() => {
+        return alert("Message sent successfully!");
+      })
       .catch((error) => alert(error));
 
     // Reset form fields after submission
@@ -36,7 +38,6 @@ const ContactComponent = () => {
     });
 
     document.querySelector("form").addEventListener("submit", handleSubmit);
-
   };
 
   return (
@@ -50,7 +51,7 @@ const ContactComponent = () => {
           <h3 className="h3 form-title">Contact Form</h3>
 
           <form
-            name="contact"
+            name="contact-form"
             method="POST"
             data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
@@ -58,7 +59,7 @@ const ContactComponent = () => {
             netlify
           >
             {/* Hidden fields for Netlify */}
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="contact-form" value="contact" />
             <input type="hidden" name="bot-field" />
 
             <div className="input-wrapper">
