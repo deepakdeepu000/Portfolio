@@ -1,11 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faClose,
   faQuoteLeft,
   faAnglesRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { faAws } from "@fortawesome/free-brands-svg-icons";
 
 const SkillList = [
   { label: "HTML", image: "./assets/images/skills/html.png" },
