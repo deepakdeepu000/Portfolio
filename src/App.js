@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import Main from './components/mainpage';
 import './App.css';
 
