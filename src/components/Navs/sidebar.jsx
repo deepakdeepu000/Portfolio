@@ -79,23 +79,6 @@ const SideBar = () => {
             ))}
           </ul>
           <div className="separator"></div>
-          <ul className="social-list">
-            <li className="social-item">
-              <a href="#" className="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li className="social-item">
-              <a href="#" className="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-            <li className="social-item">
-              <a href="#" className="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-          </ul>
         </div>
       )}
     </aside>
@@ -103,3 +86,4 @@ const SideBar = () => {
 };
 
 export default SideBar;
+
