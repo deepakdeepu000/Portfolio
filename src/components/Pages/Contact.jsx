@@ -1,4 +1,5 @@
-import React, { useState, useToast } from "react";
+import React, { useState} from "react";
+import { useToast } from '@/hooks/use-toast';
 
 const ContactComponent = () => {
   const [formData, setFormData] = useState({
