@@ -7,11 +7,7 @@ const ContactComponent = () => {
     email: "",
     message: "",
   });
-<<<<<<< HEAD
-  const [isLoading, setIsLoading] = useState(false);
-=======
   const { toast } = useToast();
->>>>>>> c25363de29ec378cc99bb246fb4992d8e6908f81
 
   const handleChange = (e) => {
     setFormData({
