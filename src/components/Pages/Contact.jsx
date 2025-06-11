@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useToast } from "react";
 
 const ContactComponent = () => {
   const [formData, setFormData] = useState({
@@ -6,6 +6,7 @@ const ContactComponent = () => {
     email: "",
     message: "",
   });
+  const { toast } = useToast();
 
   const handleChange = (e) => {
     setFormData({
@@ -15,20 +16,63 @@ const ContactComponent = () => {
   };
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    e.preventDefault();
+    
+    const formData = event.target;
 
-    const form = event.target;
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: new URLSearchParams(new FormData(form)).toString(),
+    // })
+    //   .then(() => {
+    //     alert("Message sent successfully!");
+    //     setFormData({ username: "", email: "", message: "" });
+    //   })
+    //   .catch((error) => alert(error));
+    
+    if (!formData.username || !formData.email || !formData.message) {
+      toast({
+        title: "Error",
+        description: "Please fill in all fields",
+        variant: "destructive",
+      });
+      return;
+    }
+    console.log("Submitting contact form:", formData);
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(new FormData(form)).toString(),
-    })
-      .then(() => {
-        alert("Message sent successfully!");
-        setFormData({ username: "", email: "", message: "" });
-      })
-      .catch((error) => alert(error));
+    try {
+      const response = await fetch('https://deepak-01.app.n8n.cloud/webhook/contact-deepak', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Success!",
+          description: "Your message has been sent successfully. I'll get back to you soon!",
+        });
+        
+        // Reset form
+        setFormData({
+          username: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send your message. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
