@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
+import { useToast } from '@/hooks/use-toast';
 
 const ContactComponent = () => {
   const [formData, setFormData] = useState({
@@ -6,7 +7,6 @@ const ContactComponent = () => {
     email: "",
     message: "",
   });
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -19,46 +19,17 @@ const ContactComponent = () => {
     event.preventDefault();
 
     const form = event.target;
-    console.log("Submitting contact form:", formData);
 
-    try {
-      // Set loading state
-      setIsLoading(true);
-
-      const response = await fetch(
-        "https://deepak-01.app.n8n.cloud/webhook/contact-deepak",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      if (response.ok) {
-        alert(
-          "Your message has been sent successfully. I'll get back to you soon!"
-        );
-        // Reset loading state
-        setIsLoading(false);
-
-        // Reset form
-        setFormData({
-          username: "",
-          email: "",
-          message: "",
-        });
-      } else {
-        throw new Error("Failed to send message");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("Failed to send your message. Please try again.");
-    } finally {
-      // Reset loading state in case of error
-      setIsLoading(false);
-    }
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    })
+      .then(() => {
+        alert("Message sent successfully!");
+        setFormData({ username: "", email: "", message: "" });
+      })
+      .catch((error) => alert(error));
   };
 
   return (
